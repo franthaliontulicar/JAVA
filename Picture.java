@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square floor;
+    private Person strider;
 
     /**
      * Constructor for objects of class Picture
@@ -62,6 +63,12 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        
+        strider = new Person();
+        strider.makeVisible();
+        strider.moveHorizontal(-200);
+        strider.moveVertical(30);
+        strider.slowMoveHorizontal(80);
        
         
        
@@ -104,6 +111,8 @@ public class Picture
          
     sun.slowMoveVertical(120); 
     setBlackAndWhite(); 
+    
+   
    
     }
 }
