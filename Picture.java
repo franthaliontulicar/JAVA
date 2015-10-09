@@ -17,6 +17,9 @@ public class Picture
     private Circle sun;
     private Square floor;
     private Person strider;
+    private Circle circulo1;
+    private Circle circulo2;
+    private Circle circulo3;
 
     /**
      * Constructor for objects of class Picture
@@ -64,13 +67,35 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         
+         circulo1 = new Circle();
+        circulo1.changeColor("red");
+        circulo1.moveHorizontal(-120);
+        circulo1.moveVertical(50);
+        circulo1.changeSize(80);
+        circulo1.makeVisible();
+        
+        circulo2 = new Circle();
+        circulo2.changeColor("blue");
+        circulo2.moveHorizontal(-180);
+        circulo2.moveVertical(30);
+        circulo2.changeSize(80);
+        circulo2.makeVisible();
+       
+        circulo3 = new Circle();
+        circulo3.changeColor("green");
+        circulo3.moveHorizontal(-170);
+        circulo3.moveVertical(20);
+        circulo3.changeSize(80);
+        circulo3.makeVisible();        
+        
+        
         strider = new Person();
         strider.makeVisible();
         strider.moveHorizontal(-200);
         strider.moveVertical(30);
         strider.slowMoveHorizontal(80);
-       
         
+       
        
         
         
@@ -111,8 +136,14 @@ public class Picture
          
     sun.slowMoveVertical(120); 
     setBlackAndWhite(); 
+      
+    }
     
-   
-   
+    public void circulos(){
+    
+        circulo1.slowMoveHorizontal(100);
+        circulo2.slowMoveVertical(-20);
+        circulo3.slowMoveVertical(20);
+    
     }
 }
