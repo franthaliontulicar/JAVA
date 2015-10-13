@@ -67,34 +67,13 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         
-         circulo1 = new Circle();
-        circulo1.changeColor("red");
-        circulo1.moveHorizontal(-120);
-        circulo1.moveVertical(50);
-        circulo1.changeSize(80);
-        circulo1.makeVisible();
-        
-        circulo2 = new Circle();
-        circulo2.changeColor("blue");
-        circulo2.moveHorizontal(-180);
-        circulo2.moveVertical(30);
-        circulo2.changeSize(80);
-        circulo2.makeVisible();
-       
-        circulo3 = new Circle();
-        circulo3.changeColor("green");
-        circulo3.moveHorizontal(-170);
-        circulo3.moveVertical(20);
-        circulo3.changeSize(80);
-        circulo3.makeVisible();        
-        
-        
-        strider = new Person();
+                
+        /*strider = new Person();
         strider.makeVisible();
         strider.moveHorizontal(-200);
         strider.moveVertical(30);
         strider.slowMoveHorizontal(80);
-        
+        */
        
        
         
@@ -139,9 +118,52 @@ public class Picture
       
     }
     
+    
+    public void crearCirculos(){
+    
+     circulo1 = new Circle();
+        circulo1.changeColor("red");
+        circulo1.moveHorizontal(-120);
+        circulo1.moveVertical(50);
+        circulo1.changeSize(20);
+        circulo1.makeVisible();
+        
+        circulo2 = new Circle();
+        circulo2.changeColor("blue");
+        circulo2.moveHorizontal(-180);
+        circulo2.moveVertical(30);
+        circulo2.changeSize(20);
+        circulo2.makeVisible();
+       
+        circulo3 = new Circle();
+        circulo3.changeColor("green");
+        circulo3.moveHorizontal(-170);
+        circulo3.moveVertical(20);
+        circulo3.changeSize(20);
+        circulo3.makeVisible();      
+    
+    
+    }
+           
     public void circulos(){
     
-        circulo1.slowMoveHorizontal(100);
+
+        if (circulo1 != null){
+        
+        draw();
+        }
+        
+         if (circulo2 != null){
+        
+        draw();
+        }
+        
+         if (circulo3 != null){
+        
+        draw();
+        }
+        
+        circulo1.slowMoveHorizontal(10);
         circulo2.slowMoveVertical(-20);
         circulo3.slowMoveVertical(20);
     
