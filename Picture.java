@@ -68,12 +68,8 @@ public class Picture
         sun.makeVisible();
         
                 
-        /*strider = new Person();
-        strider.makeVisible();
-        strider.moveHorizontal(-200);
-        strider.moveVertical(30);
-        strider.slowMoveHorizontal(80);
-        */
+        
+        
        
        
         
@@ -118,6 +114,19 @@ public class Picture
       
     }
     
+    public void caminante(){
+    
+        strider = new Person();
+        strider.makeVisible();
+        strider.moveHorizontal(-200);
+        strider.moveVertical(30);
+        strider.slowMoveHorizontal(80);
+           
+    
+    
+    }
+    
+    
     
     public void crearCirculos(){
     
@@ -149,23 +158,14 @@ public class Picture
     
 
         if (circulo1 != null){
-        
-        draw();
-        }
-        
-         if (circulo2 != null){
-        
-        draw();
-        }
-        
-         if (circulo3 != null){
-        
-        draw();
-        }
-        
-        /*circulo1.slowMoveHorizontal(10);
+        circulo1.slowMoveHorizontal(10);
         circulo2.slowMoveVertical(-20);
         circulo3.slowMoveVertical(20);
-    */
+       
+        }
+        
+      
+        
+   
     }
 }
