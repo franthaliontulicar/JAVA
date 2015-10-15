@@ -163,9 +163,9 @@ public class Picture
         draw();
         }
         
-        circulo1.slowMoveHorizontal(10);
+        /*circulo1.slowMoveHorizontal(10);
         circulo2.slowMoveVertical(-20);
         circulo3.slowMoveVertical(20);
-    
+    */
     }
 }
